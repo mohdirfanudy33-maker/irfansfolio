@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Responsive Portfolio Website Anid
 ## [Watch it on youtube](https://youtu.be/qxxanKFR7js)
 ### Responsive Portfolio Website Anid
@@ -15,3 +16,6 @@
 💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/@Bedimcode)
 
 ![preview img](/preview.png)
+=======
+# irfansfolio
+>>>>>>> 23cbd52c03a5b200a8d3727ab98bc65d431e0f38
