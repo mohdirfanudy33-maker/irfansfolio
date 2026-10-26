@@ -1,85 +1,192 @@
-<!DOCTYPE html>
-   <html lang="en">
+<!doctype html>
+<html lang="en">
    <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <!--=============== FAVICON ===============-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#9b78ff">
+      <meta name="description" content="Anid Wrooks — creative web developer and designer.">
       <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-      <!--=============== REMIXICONS ===============-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
-
-      <title>Responsive portfolio website Anid - Bedimcode</title>
+      <link rel="stylesheet" href="assets/css/styles.css?v=2">
+      <title>irfansfolio - flutter developer</title>
    </head>
    <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
+      <a class="skip-link" href="#main">Skip to content</a>
+      <main id="main">
+      <div class="site-shell">
+         <header class="header" id="header" role="banner">
+            <nav class="nav container" aria-label="Main navigation">
+            <a class="nav__logo" href="#home" aria-label="Anid home">irfansfolio</a>
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation">
+               <span></span><span></span>
+            </button>
+            <div class="nav__menu" id="nav-menu">
+               <a class="nav__link is-active" href="#about">About me</a>
+               <a class="nav__link" href="#projects">Projects</a>
+               <a class="nav__link" href="#contact">Contact</a>
+            </div>
+            </nav>
+         </header>
 
-      </header>
+         <section class="home" id="home" aria-labelledby="home-title">
+            <div class="home__content">
+               <p class="home__greeting">Hello, I'm</p>
+               <h1 id="home-title">Muhammad<br>Irfan</h1>
+            </div>
+            <div class="home__visual" aria-hidden="true">
+               <img class="home__portrait" src="assets/img/homeprofile.png" alt="Muhammad Irfan">
+            </div>
+            <div class="home__profession">
+               <p class="home__split">Creative</p>
+               <h2><span>Developer</span><br>&amp; Designer</h2>
+            </div>
+            <ul class="home__social" aria-label="Social media">
+               <li><a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="ri-linkedin-box-line" aria-hidden="true"></i></a></li>
+               <li><a href="https://github.com/" aria-label="GitHub"><i class="ri-github-line" aria-hidden="true"></i></a></li>
+               <li><a href="https://dribbble.com/" aria-label="Dribbble"><i class="ri-dribbble-line" aria-hidden="true"></i></a></li>
+               <li><a href="https://about.gitlab.com/" aria-label="GitLab"><i class="ri-gitlab-line" aria-hidden="true"></i></a></li>
+            </ul>
+            <a class="home__cv" href="assets/pdf/Muhammad-Irfan-Cv.pdf" target="_blank" rel="noopener">RESUME <i class="ri-file-list-3-line" aria-hidden="true"></i></a>
+         </section>
+      </div>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!-- CUSTOM CURSOR -->
-         
-         <!--==================== HOME ====================-->
-         <section class="home section">
-            
-            
+      <div class="site-shell content-shell">
+         <section class="section about container" id="about" aria-labelledby="about-title">
+            <div class="section__heading">
+               <p class="eyebrow">A little about me</p>
+               <h2 class="section__title" id="about-title"><span>Creativity</span><br>Is My Passion</h2>
+            </div>
+            <div class="about__content">
+               <div class="about__portrait">
+                  <img src="assets/img/aboutnewpicture.png" alt="Muhammad Irfan">
+               </div>
+               <div class="about__copy">
+                  <p class="about__lead">I'm a mobile app <b>developer and designer</b> passionate about experimenting with new <b>skills and creativity.</b></p>
+                  <p>Driven by learning and curiosity, I'm always looking to explore and learn new development and design skills.</p>
+                  <a class="text-link" href="assets/pdf/Anid-Cv.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+                  <div class="about__stats">
+                     <div><strong>Design</strong><span>Intentional interfaces</span></div>
+                     <div><strong>Development</strong><span>Responsive experiences</span></div>
+                     <div><strong>Always</strong><span>Learning something new</span></div>
+                  </div>
+               </div>
+            </div>
          </section>
 
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            
+         <section class="section projects container" id="projects" aria-labelledby="projects-title">
+            <div class="section__heading section__heading--row">
+               <div>               <p class="eyebrow">Selected work</p><h2 class="section__title" id="projects-title">I Make Incredible<br><span>Projects</span></h2></div>
+               <p class="section__aside">A selection of web and design projects built with curiosity and creativity.</p>
+            </div>
+            <div class="project-grid">
+               <article class="project-card project-card--large">
+                  <a class="project-card__image" href="#contact" aria-label="Discuss the Barbershop project">
+                     <img src="assets/img/projects-1.png" alt="Barbershop website project preview" loading="lazy">
+                     <span class="project-card__arrow" aria-hidden="true">↗</span>
+                  </a>
+                  <div class="project-card__info"><div><span class="project-card__type">01 / Web</span><h3>Barbershop<br>website</h3></div><span class="project-card__year">01</span></div>
+                  <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GSAP</li><li>Figma</li></ul>
+               </article>
+               <article class="project-card">
+                  <a class="project-card__image project-card__image--lavender" href="#contact" aria-label="Discuss the Ice Cream Shop project">
+                     <img src="assets/img/projects-2.png" alt="Ice cream shop interface design preview" loading="lazy">
+                     <span class="project-card__arrow" aria-hidden="true">↗</span>
+                  </a>
+                  <div class="project-card__info"><div><span class="project-card__type">02 / Design</span><h3>Interface Design<br>For Ice Cream Shop</h3></div><span class="project-card__year">02</span></div>
+                  <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Figma</li></ul>
+               </article>
+               <article class="project-card">
+                  <a class="project-card__image project-card__image--peach" href="#contact" aria-label="Discuss the Coffee project">
+                     <img src="assets/img/projects-3.png" alt="Coffee website project preview" loading="lazy">
+                     <span class="project-card__arrow" aria-hidden="true">↗</span>
+                  </a>
+                  <div class="project-card__info"><div><span class="project-card__type">03 / Web</span><h3>SEO For Coffee<br>Websites</h3></div><span class="project-card__year">03</span></div>
+                  <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Figma</li></ul>
+               </article>
+               <article class="project-card">
+                  <a class="project-card__image project-card__image--blue" href="#contact" aria-label="Discuss the restaurant project">
+                     <img src="assets/img/projects-4.png" alt="Restaurant web design project preview" loading="lazy">
+                     <span class="project-card__arrow" aria-hidden="true">↗</span>
+                  </a>
+                  <div class="project-card__info"><div><span class="project-card__type">04 / Design</span><h3>Web Design<br>For Restaurant</h3></div><span class="project-card__year">04</span></div>
+                  <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Figma</li></ul>
+               </article>
+               <article class="project-card project-card--wide">
+                  <a class="project-card__image project-card__image--green" href="#contact" aria-label="Discuss the fast food project">
+                     <img src="assets/img/projects-5.png" alt="Fast food website project preview" loading="lazy">
+                     <span class="project-card__arrow" aria-hidden="true">↗</span>
+                  </a>
+                  <div class="project-card__info"><div><span class="project-card__type">05 / Web</span><h3>Fast Food<br>Website</h3></div><span class="project-card__year">05</span></div>
+                  <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Figma</li></ul>
+               </article>
+            </div>
          </section>
 
-         <!--==================== PROJECTS ====================-->
-         <section class="projects section" id="projects">
-            
+         <section class="section experience container" id="experience" aria-labelledby="experience-title">
+            <div class="section__heading">
+               <p class="eyebrow">Experience &amp; education</p>
+               <h2 class="section__title" id="experience-title"><span>My Work</span><br>Experience</h2>
+            </div>
+            <div class="experience__layout">
+               <div class="tab-list" role="tablist" aria-label="Experience or education">
+                  <button class="tab-button is-active" id="work-tab" type="button" role="tab" aria-selected="true" aria-controls="work-panel" data-tab="work">Experience <span>03</span></button>
+                  <button class="tab-button" id="education-tab" type="button" role="tab" aria-selected="false" aria-controls="education-panel" data-tab="education" tabindex="-1">Education <span>03</span></button>
+               </div>
+               <div class="experience__panel" id="work-panel" role="tabpanel" aria-labelledby="work-tab" data-panel="work">
+                  <article class="timeline-item"><span class="timeline-item__year">Now</span><div><h3>SEO &amp; Web Optimization</h3><p>Google Inc</p><span>Web developer handling technologies such as Angular, databases, CMS, assisting with web optimization.</span></div></article>
+                  <article class="timeline-item"><span class="timeline-item__year">2026</span><div><h3>Web Developer</h3><p>Blue Range Arabia.co.ltd</p><span>Web developer handling technologies such as Angular, databases, CMS, assisting with web optimization.</span></div></article>
+                  <article class="timeline-item"><span class="timeline-item__year">2026</span><div><h3>Flutter Developer intern</h3><p>Yenepoya Technology Incubator - Derlakatte,mangalore</p><span>Web developer handling technologies such as Angular, databases, CMS, assisting with web optimization.</span></div></article>
+               </div>
+               <div class="experience__panel" id="education-panel" role="tabpanel" aria-labelledby="education-tab" data-panel="education" hidden>
+                  <article class="timeline-item"><span class="timeline-item__year">PRESENT</span><div><h3>Master of Computer Applications</h3><p>Chandigarh University - Punjab</p><span>College student, learning the basics of programming, web development, and other topics, graduating with honors.</span></div></article>
+                  <article class="timeline-item"><span class="timeline-item__year">2026</span><div><h3>Bachelor of Computer Applications</h3><p>Yenepoya University - Mangalore</p><span>College student, learning the basics of programming, web development, and other topics, graduating with honors.</span></div></article>
+                  <article class="timeline-item"><span class="timeline-item__year">2023</span><div><h3>Higher Secondary Education</h3><p>Government Pre-University College - Karnataka</p><span>College student, learning the basics of programming, web development, and other topics, graduating with honors.</span></div></article>
+               </div>
+            </div>
          </section>
 
-         <!--==================== WORK ====================-->
-         <section class="work section">
-
+         <section class="section services container" id="services" aria-labelledby="services-title">
+            <div class="section__heading section__heading--row">
+               <div><p class="eyebrow">Services</p><h2 class="section__title" id="services-title">What I <span>Offer</span></h2></div>
+               <p class="section__aside">Creative development and design for the web.</p>
+            </div>
+            <div class="service-grid">
+               <article class="service-card"><span class="service-card__number">01</span><h3>Developer</h3><p>Website creation with HTML, CSS, JavaScript. Professional websites with TypeScript, React, Node JS, and lots of creativity.</p><h4>Skills &amp; Tools</h4><ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>TypeScript</li><li>Node JS</li><li>Next JS</li><li>PHP</li><li>GitHub</li></ul></article>
+               <article class="service-card"><span class="service-card__number">02</span><h3>Design</h3><p>Web designer with Figma and Sketch, creating motion designs with After Effects, creativity and design at its best.</p><h4>Skills &amp; Tools</h4><ul class="tag-list"><li>Figma</li><li>Adobe XD</li><li>Photoshop</li><li>Illustrator</li><li>Sketch</li><li>3D Modeling</li><li>After Effects</li></ul></article>
+            </div>
          </section>
 
-         <!--==================== SERVICES ====================-->
-         <section class="services section">
-
+         <section class="section testimonials container" aria-labelledby="testimonials-title">
+            <div class="section__heading">
+               <p class="eyebrow">Testimonials</p>
+               <h2 class="section__title" id="testimonials-title"><span>What They Say</span><br>About Me</h2>
+            </div>
+            <div class="testimonial-grid">
+               <article class="testimonial-card"><div class="testimonial-card__rating">★★★★★ <span>5.0</span></div><p>The company offers many easy-to-use services, with hard work and round-the-clock support on all projects.</p><div class="testimonial-card__person"><img src="assets/img/testimonial-1.png" alt="" loading="lazy"><strong>Abex Wrooks</strong></div></article>
+               <article class="testimonial-card"><div class="testimonial-card__rating">★★★★★ <span>5.0</span></div><p>The company offers many easy-to-use services, with hard work and round-the-clock support on all projects.</p><div class="testimonial-card__person"><img src="assets/img/testimonial-2.png" alt="" loading="lazy"><strong>Willer Morth</strong></div></article>
+               <article class="testimonial-card"><div class="testimonial-card__rating">★★★★★ <span>5.0</span></div><p>The company offers many easy-to-use services, with hard work and round-the-clock support on all projects.</p><div class="testimonial-card__person"><img src="assets/img/testimonial-3.png" alt="" loading="lazy"><strong>Llemi Llorens</strong></div></article>
+               <article class="testimonial-card"><div class="testimonial-card__rating">★★★★★ <span>5.0</span></div><p>The company offers many easy-to-use services, with hard work and round-the-clock support on all projects.</p><div class="testimonial-card__person"><img src="assets/img/testimonial-4.png" alt="" loading="lazy"><strong>Jems Guiller</strong></div></article>
+            </div>
          </section>
 
-         <!--==================== TESTIMONIALS ====================-->
-         <section class="testimonials section">
-
+         <section class="section contact container" id="contact" aria-labelledby="contact-title">
+            <div class="contact__panel">
+               <p class="eyebrow">Get in touch</p>
+               <h2 id="contact-title">Contact Me</h2>
+               <p>Tell me about your next project.</p>
+               <a class="contact__email" href="mailto:mohdirfanudy33@gmail.com">mohdirfanudy33@gmail.com <span aria-hidden="true">↗</span></a>
+               <button class="copy-button" type="button" data-copy-email="mohdirfanudy33@gmail.com">Copy email</button>
+               <p class="copy-status" aria-live="polite"></p>
+               <div class="contact__bottom"><span>Lima, Peru · Working worldwide</span><a href="assets/pdf/Muhammad-Irfan-Cv.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a></div>
+            </div>
          </section>
-
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            
-         </section>
+         <footer class="footer container">
+            <a class="nav__logo" href="#home">irfansfolio</a>
+            <p>All Rights Reserved By <span>irfansfolio</span></p>
+            <span>© <span data-current-year></span></span>
+         </footer>
+      </div>
       </main>
-
-      <!--==================== FOOTER ====================-->
-      <footer class="footer grid">
-         
-      </footer>
-      
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="assets/js/scrollreveal.min.js"></script>
-
-      <!--=============== ANIME JS ===============-->
-      <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
-
-      <!--=============== SWIPER JS ===============-->
-      <script src="assets/js/swiper-bundle.min.js"></script>
-
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+      <script src="assets/js/main.js" defer></script>
    </body>
 </html>
